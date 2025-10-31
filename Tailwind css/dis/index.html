@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web World</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-linear-to-r/oklch from-indigo-500 to-teal-600">
+
+  <header class="w-full bg-blue-800 md:bg-blue-400 text-teal-50 font-bold rounded-b-xl">
+    <!-- Main header container -->
+    <div class="flex items-center justify-between px-4 h-20 md:h-28">
+      
+      <!-- Logo and Title -->
+      <div class="flex items-center">
+        <img src="https://assets.thehansindia.com/h-upload/2022/04/29/1289572-web.webp"
+             alt="Logo"
+             class="h-16 md:h-20 object-cover">
+        <h1 class="text-xl md:text-3xl pl-4 font-[Algerian]">
+          Web World
+        </h1>
+      </div>
+
+      <!-- Hamburger icon (visible only on mobile) -->
+      <div class="block md:hidden hover:" id="btn">
+        <i class="fa-solid fa-bars fa-xl text-white"></i>
+      </div>
+
+    </div>
+
+    <!-- Navigation links (visible only on medium and larger screens) -->
+    <div class="hidden md:flex justify-center items-center bg-black text-2xl py-2 font-bold " id="list">
+      <a href="#" class="px-10 hover:text-red-400">Home</a>
+      <a href="#" class="px-10 hover:text-red-400">Sample</a>
+      <a href="#" class="px-10 hover:text-red-400">Contact</a>
+    </div>
+  </header>
+
+
+
+  <script>
+    var btn = document.getElementById("btn");
+    var list = document.getElementById("list");
+
+    btn.onclick = function() {
+      if (list.style.display === "none") {
+        list.style.display = "block";
+      } else {
+        list.style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+</html>
